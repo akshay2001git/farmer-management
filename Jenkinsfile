@@ -70,7 +70,7 @@ pipeline {
                     sh '''
                         mvn org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
                         -Dsonar.projectKey=farmer-management \
-                        -Dsonar.projectName=farmer-management
+                        -Dsonar.projectName=Farmer-Management
                     '''
                 }
             }
