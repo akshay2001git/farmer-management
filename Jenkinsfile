@@ -104,9 +104,9 @@ pipeline {
                     docker rm farmer-app || true
 
                     docker run -d \
-                    --name farmer-app \
-                    -p 8081:8081 \
-                    ${IMAGE_NAME}:${IMAGE_TAG}
+                --name farmer-app \
+                -p 8081:8081 \
+                farmer-management:1.0
                 '''
             }
         }
