@@ -87,7 +87,7 @@ pipeline {
                 withSonarQubeEnv('SonarQube') {
 
                     sh '''
-                        mvn sonar:sonar \
+                        mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
                         -Dsonar.projectKey=farmer-management \
                         -Dsonar.projectName=Farmer-Management
                     '''
